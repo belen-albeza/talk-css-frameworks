@@ -17,13 +17,13 @@
   font-family: 'Fira Sans';
   font-style: normal;
   font-weight: 400;
-  src: local('Fira Sans'), local('FiraSans-Regular'), url(fonts/FiraSans-Regular.woff2) format('woff2');
+  src: local('Fira Sans'), local('FiraSans-Regular'), url('fonts/FiraSans-Regular.woff2') format('woff2');
 }
 @font-face {
   font-family: 'Fira Sans';
   font-style: normal;
   font-weight: 700;
-  src: local('Fira Sans Bold'), local('FiraSans-Bold'), url(fonts/FiraSans-Bold.woff2) format('woff2');
+  src: local('Fira Sans Bold'), local('FiraSans-Bold'), url('fonts/FiraSans-Bold.woff2') format('woff2');
 }
 
 
@@ -54,8 +54,10 @@ p, li {
 a {
     text-decoration: none;
     color: @textColor;
-    box-shadow: inset 0 -5px @accentColor;
-    &:hover {
+    &:not(.image) {
+        box-shadow: inset 0 -5px @accentColor;
+    }
+    &:not(.image):hover {
         background: @accentColor;
     }
 }
