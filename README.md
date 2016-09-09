@@ -2,6 +2,8 @@
 
 "You might not need a CSS framework" talk by Belén Albeza.
 
+* [See these slides online](https://belen-albeza.github.io/talk-css-frameworks)
+
 Generated with [generator-simple-bespoke](https://github.com/belen-albeza/generator-simple-bespoke).
 
 ## Requirements
@@ -33,4 +35,3 @@ To deploy to Github pages:
 ```
 gulp deploy
 ```
-

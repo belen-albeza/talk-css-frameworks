@@ -9,7 +9,7 @@ body
     article#deck
         //- front slide with title and author
         section
-            h1 You might not need a framework
+            h1 You might not need a CSS framework
             p: a(href="https://twitter.com/ladybenko") @ladybenko
             p belen@mozilla.com
 
@@ -22,7 +22,7 @@ body
                 li Ideally you can just copy&amp;paste UX bits
 
         section
-            p: img.figure(src="images/bootstrap.png") 
+            p: img.figure(src="images/bootstrap.png")
 
         section
             h1 Why people use them?
@@ -49,31 +49,14 @@ body
             p: img.figure(src="images/markup.png")
 
         section
-            h1 In summary
-            p.bullet Hard to maintain code
-            p.bullet Is this what you'd like for your theme users?
-
-        section
             h1 Layouts
-
-        section
-            h1 Grid frameworks
-            ul
-                li Appeared because it is painful to craft a layout with <code>display:float</code>
-                li They make you use classes like <code>mobile-grid-50</code>
-                li Examples: 960, etc.
-
-        section
-            h1 If you just need a grid
-            p You don't need a <em>whole</em> UX framework
 
         section
             h1 Today: meet flexbox!
             ul
                 li It is easier to create layouts
-                li Holy Grail layout… solved!
-                li Vertical alignment… solved!
-                li Sticky footer… solved!
+                li Holy Grail layout, vertical alignment, sticky footer… solved!
+                li Beware: it's 1-dimensional
 
         section
             h1 Holy Grail with flexbox
@@ -125,13 +108,6 @@ body
                 img(src="images/caniuse.png")
 
         section
-            h1 Caveats
-            ul
-                li It's 1-dimensional
-                li You still might need a few wrappers (i.e. <code>div.row</code>)
-            p But still a great alternative!
-
-        section
             h1 How to use it?
             ul
                 li: a(href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Using_CSS_flexible_boxes") "Using CSS flexible boxes" at MDN
@@ -140,7 +116,7 @@ body
         section
             h1 Tomorrow: grid!
             ul
-                li Like flexbox, but 2-dimensional
+                li Similar flexbox, but 2-dimensional
                 li It allows you to fully define a grid to position your elements in
 
         section
@@ -184,8 +160,11 @@ body
                 li Article at <a href="https://hacks.mozilla.org/2015/09/the-future-of-layout-with-css-grid-layouts/">Hacks blog</a>
 
         section
-            h1 Components
-            p Let's re-think this
+            h1 If you just need a grid
+            p You don't need a <em>whole</em> UX framework
+
+        section
+            h1 UI components
 
         section
             h1 If you have a custom design…
@@ -207,13 +186,6 @@ body
             ul
                 li You are better off crafting your own style guide
                 li Must-read article by <a href="https://24ways.org/2011/front-end-style-guides/">Anna Debenham</a>
-
-        section
-            h1 If you feel you <em>need</em> a framework…
-            ul
-                li Can you use the mixins instead?
-                li You will have a more lean codebase
-                li You will make your own decisions about HTML and CSS
 
         section
             h1 Thanks!
